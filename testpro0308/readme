@@ -1,0 +1,33 @@
+Install Protractor Globally
+
+Step 1: Download and install NodeJS. http://nodejs.org/download/. After installation make sure its path is configured correctly, so that command execution can find Node.
+Step 2: Open the command prompt and type in the following command to install protractor globally.
+1
+npm install –g protractor
+Install Protractor Locally
+
+You can install protractor locally in your project directory. Go to your project directory and type in the following command in the command prompt:
+
+1
+npm install protractor
+Verify Installation
+
+To verify your installation, please type in the command
+
+1
+Protractor --version
+If Protractor is installed successfully then the system will display the installed version. Otherwise you will have to recheck the installation.
+
+Step 3: If you don’t have the Selenium server on your machine, then download the latest version onto your machine. If you want to run tests on different browsers, then please download the respective drivers as well. For example, Chrome driver will come in handy to run tests on the Chrome browser.
+
+
+
+run test
+
+
+webdriver-manager update
+
+webdriver-manager start
+
+
+testpro0308/spec$ protractor conf.js

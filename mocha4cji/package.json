@@ -1,0 +1,33 @@
+{
+  "name": "mocha4cji",
+  "version": "1.0.0",
+  "description": "Automation test scripts",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha && mocha test --require blanket --reporter html-cov > coverage.html"
+  },
+  "config": {
+    "blanket": {
+      "pattern": [
+        "index.js"
+      ],
+      "data-cover-never": "node_modules"
+    }
+  },
+  "keywords": [
+    "mocha",
+    "webdriverio",
+    "onlinetax"
+  ],
+  "author": "cynthia ji",
+  "license": "ISC",
+  "devDependencies": {
+    "blanket": "^1.1.6",
+    "chai": "^2.1.1",
+    "chai-as-promised": "^4.3.0",
+    "chromedriver": "^2.14.1",
+    "mocha": "^2.2.1",
+    "selenium-webdriver": "^2.44.0" 
+
+  }
+}

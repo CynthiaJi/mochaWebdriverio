@@ -1,0 +1,242 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install', 'protractor', '-dev' ]
+2 info using npm@2.1.11
+3 info using node@v0.10.33
+4 verbose node symlink /usr/bin/node
+5 verbose config Skipping project config: /home/online/.npmrc. (matches userconfig)
+6 silly cache add args [ 'protractor', null ]
+7 verbose cache add spec protractor
+8 silly cache add parsed spec { raw: 'protractor',
+8 silly cache add   scope: null,
+8 silly cache add   name: 'protractor',
+8 silly cache add   rawSpec: '',
+8 silly cache add   spec: '*',
+8 silly cache add   type: 'range' }
+9 verbose addNamed protractor@*
+10 silly addNamed semver.valid null
+11 silly addNamed semver.validRange *
+12 silly addNameRange { name: 'protractor', range: '*', hasData: false }
+13 silly mapToRegistry name protractor
+14 silly mapToRegistry using default registry
+15 silly mapToRegistry registry https://registry.npmjs.org/
+16 silly mapToRegistry uri https://registry.npmjs.org/protractor
+17 verbose addNameRange registry:https://registry.npmjs.org/protractor not in flight; fetching
+18 verbose request uri https://registry.npmjs.org/protractor
+19 verbose request no auth needed
+20 info attempt registry request try #1 at 15:23:49
+21 verbose request id f4afaf592923827a
+22 verbose etag "4HHX7SM2QH3SLNPA3WLMWX5MZ"
+23 http request GET https://registry.npmjs.org/protractor
+24 http 200 https://registry.npmjs.org/protractor
+25 silly get cb [ 200,
+25 silly get   { date: 'Fri, 06 Mar 2015 04:23:49 GMT',
+25 silly get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+25 silly get     etag: '"72596GEA2SGXG3ZWR7FORHCY5"',
+25 silly get     'content-type': 'application/json',
+25 silly get     'cache-control': 'max-age=60',
+25 silly get     'content-length': '83951',
+25 silly get     'accept-ranges': 'bytes',
+25 silly get     via: '1.1 varnish',
+25 silly get     age: '39',
+25 silly get     'x-served-by': 'cache-syd1623-SYD',
+25 silly get     'x-cache': 'HIT',
+25 silly get     'x-cache-hits': '1',
+25 silly get     'x-timer': 'S1425615829.464290,VS0,VE0',
+25 silly get     vary: 'Accept',
+25 silly get     'keep-alive': 'timeout=10, max=50',
+25 silly get     connection: 'Keep-Alive' } ]
+26 silly addNameRange number 2 { name: 'protractor', range: '*', hasData: true }
+27 silly addNameRange versions [ 'protractor',
+27 silly addNameRange   [ '0.1.0',
+27 silly addNameRange     '0.1.1',
+27 silly addNameRange     '0.1.2',
+27 silly addNameRange     '0.1.3',
+27 silly addNameRange     '0.2.0',
+27 silly addNameRange     '0.2.1',
+27 silly addNameRange     '0.3.0',
+27 silly addNameRange     '0.4.0',
+27 silly addNameRange     '0.4.1',
+27 silly addNameRange     '0.5.0',
+27 silly addNameRange     '0.6.1',
+27 silly addNameRange     '0.7.0',
+27 silly addNameRange     '0.8.0',
+27 silly addNameRange     '0.9.0',
+27 silly addNameRange     '0.10.0',
+27 silly addNameRange     '0.11.0',
+27 silly addNameRange     '0.12.0',
+27 silly addNameRange     '0.12.1',
+27 silly addNameRange     '0.13.0',
+27 silly addNameRange     '0.14.0',
+27 silly addNameRange     '0.15.0',
+27 silly addNameRange     '0.16.0',
+27 silly addNameRange     '0.16.1',
+27 silly addNameRange     '0.17.0',
+27 silly addNameRange     '0.18.0',
+27 silly addNameRange     '0.18.1',
+27 silly addNameRange     '0.19.0',
+27 silly addNameRange     '0.20.0',
+27 silly addNameRange     '0.20.1',
+27 silly addNameRange     '0.21.0',
+27 silly addNameRange     '0.22.0',
+27 silly addNameRange     '0.23.0',
+27 silly addNameRange     '0.23.1',
+27 silly addNameRange     '0.24.0',
+27 silly addNameRange     '0.24.1',
+27 silly addNameRange     '0.24.2',
+27 silly addNameRange     '1.0.0-rc1',
+27 silly addNameRange     '1.0.0-rc2',
+27 silly addNameRange     '1.0.0-rc3',
+27 silly addNameRange     '1.0.0-rc4',
+27 silly addNameRange     '1.0.0-rc5',
+27 silly addNameRange     '1.0.0-rc6',
+27 silly addNameRange     '1.0.0',
+27 silly addNameRange     '1.1.0',
+27 silly addNameRange     '1.1.1',
+27 silly addNameRange     '1.2.0-beta1',
+27 silly addNameRange     '1.2.0',
+27 silly addNameRange     '1.3.0',
+27 silly addNameRange     '1.3.1',
+27 silly addNameRange     '1.4.0',
+27 silly addNameRange     '1.5.0',
+27 silly addNameRange     '1.6.0',
+27 silly addNameRange     '1.6.1',
+27 silly addNameRange     '1.7.0',
+27 silly addNameRange     '1.8.0' ] ]
+28 verbose addNamed protractor@1.8.0
+29 silly addNamed semver.valid 1.8.0
+30 silly addNamed semver.validRange 1.8.0
+31 silly mapToRegistry name protractor
+32 silly mapToRegistry using default registry
+33 silly mapToRegistry registry https://registry.npmjs.org/
+34 silly mapToRegistry uri https://registry.npmjs.org/protractor
+35 verbose addRemoteTarball https://registry.npmjs.org/protractor/-/protractor-1.8.0.tgz not in flight; adding
+36 verbose addRemoteTarball [ 'https://registry.npmjs.org/protractor/-/protractor-1.8.0.tgz',
+36 verbose addRemoteTarball   'ac2b05f590eddb293bddd41e8deaf999f60fc53c' ]
+37 info retry fetch attempt 1 at 15:23:49
+38 info attempt registry request try #1 at 15:23:49
+39 http fetch GET https://registry.npmjs.org/protractor/-/protractor-1.8.0.tgz
+40 http fetch 200 https://registry.npmjs.org/protractor/-/protractor-1.8.0.tgz
+41 silly fetchAndShaCheck shasum ac2b05f590eddb293bddd41e8deaf999f60fc53c
+42 verbose addTmpTarball /tmp/npm-3432-1af2b1db/registry.npmjs.org/protractor/-/protractor-1.8.0.tgz not in flight; adding
+43 verbose addTmpTarball already have metadata; skipping unpack for protractor@1.8.0
+44 silly cache afterAdd protractor@1.8.0
+45 verbose afterAdd /home/online/.npm/protractor/1.8.0/package/package.json not in flight; writing
+46 verbose afterAdd /home/online/.npm/protractor/1.8.0/package/package.json written
+47 silly install resolved [ { name: 'protractor',
+47 silly install resolved     description: 'Webdriver E2E test wrapper for Angular.',
+47 silly install resolved     homepage: 'https://github.com/angular/protractor',
+47 silly install resolved     keywords:
+47 silly install resolved      [ 'angular',
+47 silly install resolved        'test',
+47 silly install resolved        'testing',
+47 silly install resolved        'webdriver',
+47 silly install resolved        'webdriverjs',
+47 silly install resolved        'selenium' ],
+47 silly install resolved     author: { name: 'Julie Ralph', email: 'ju.ralph@gmail.com' },
+47 silly install resolved     dependencies:
+47 silly install resolved      { request: '~2.36.0',
+47 silly install resolved        'selenium-webdriver': '2.44.0',
+47 silly install resolved        minijasminenode: '1.1.1',
+47 silly install resolved        jasminewd: '1.1.0',
+47 silly install resolved        jasminewd2: '0.0.2',
+47 silly install resolved        jasmine: '2.1.1',
+47 silly install resolved        saucelabs: '~0.1.0',
+47 silly install resolved        glob: '~3.2',
+47 silly install resolved        'adm-zip': '0.4.4',
+47 silly install resolved        optimist: '~0.6.0',
+47 silly install resolved        q: '1.0.0',
+47 silly install resolved        lodash: '~2.4.1',
+47 silly install resolved        'source-map-support': '~0.2.6',
+47 silly install resolved        'html-entities': '~1.1.1',
+47 silly install resolved        'accessibility-developer-tools': '~2.6.0' },
+47 silly install resolved     devDependencies:
+47 silly install resolved      { 'expect.js': '~0.2.0',
+47 silly install resolved        chai: '~1.8.1',
+47 silly install resolved        'chai-as-promised': '~4.1.0',
+47 silly install resolved        'jasmine-reporters': '~0.2.1',
+47 silly install resolved        jshint: '2.5.0',
+47 silly install resolved        mocha: '1.21.4',
+47 silly install resolved        cucumber: '~0.3.3',
+47 silly install resolved        express: '~3.3.4',
+47 silly install resolved        lodash: '~2.4.1',
+47 silly install resolved        rimraf: '~2.2.6' },
+47 silly install resolved     repository: { type: 'git', url: 'git://github.com/angular/protractor.git' },
+47 silly install resolved     bin:
+47 silly install resolved      { protractor: 'bin/protractor',
+47 silly install resolved        'webdriver-manager': 'bin/webdriver-manager' },
+47 silly install resolved     main: 'lib/protractor.js',
+47 silly install resolved     scripts:
+47 silly install resolved      { pretest: 'jshint lib spec scripts',
+47 silly install resolved        test: 'node scripts/test.js',
+47 silly install resolved        start: 'node testapp/scripts/web-server.js' },
+47 silly install resolved     license: 'MIT',
+47 silly install resolved     version: '1.8.0',
+47 silly install resolved     gitHead: '29ce5c6ad0d24d06f03f0a7736af4f6a91d4bf3f',
+47 silly install resolved     bugs: { url: 'https://github.com/angular/protractor/issues' },
+47 silly install resolved     _id: 'protractor@1.8.0',
+47 silly install resolved     _shasum: 'ac2b05f590eddb293bddd41e8deaf999f60fc53c',
+47 silly install resolved     _from: 'protractor@*',
+47 silly install resolved     _npmVersion: '1.4.28',
+47 silly install resolved     _npmUser: { name: 'juliemr', email: 'ju.ralph@gmail.com' },
+47 silly install resolved     maintainers: [ [Object], [Object] ],
+47 silly install resolved     dist:
+47 silly install resolved      { shasum: 'ac2b05f590eddb293bddd41e8deaf999f60fc53c',
+47 silly install resolved        tarball: 'http://registry.npmjs.org/protractor/-/protractor-1.8.0.tgz' },
+47 silly install resolved     directories: {},
+47 silly install resolved     _resolved: 'https://registry.npmjs.org/protractor/-/protractor-1.8.0.tgz' } ]
+48 info install protractor@1.8.0 into /home/online
+49 info installOne protractor@1.8.0
+50 verbose installOne of protractor to /home/online not in flight; installing
+51 verbose lock using /home/online/.npm/_locks/protractor-87c1e5910e911526.lock for /home/online/node_modules/protractor
+52 silly install write writing protractor 1.8.0 to /home/online/node_modules/protractor
+53 silly cache addNamed cb protractor@1.8.0
+54 verbose unbuild node_modules/protractor
+55 info preuninstall protractor@1.6.0
+56 info uninstall protractor@1.6.0
+57 verbose unbuild rmStuff protractor@1.6.0 from /home/online/node_modules
+58 verbose gentlyRm verifying that /home/online is managed by npm
+59 verbose gentlyRm verifying that /home/online is managed by npm
+60 silly isManaged /home/online is not inside /home/online/node_modules
+61 silly isManaged /home/online is not inside /home/online/node_modules
+62 silly isManaged /home/online is not inside /home/online/node_modules
+63 silly isManaged /home/online is not inside /home/online/node_modules
+64 silly isManaged /home/online/node_modules/.bin is inside /home/online
+65 silly gentlyRm /home/online is managed by npm
+66 silly gentlyRm /home/online/node_modules/.bin/protractor is under /home/online
+67 verbose gentlyRm vacuuming /home/online/node_modules/.bin/protractor up to /home/online
+68 silly isManaged /home/online/node_modules/.bin is inside /home/online
+69 silly gentlyRm /home/online is managed by npm
+70 silly gentlyRm /home/online/node_modules/.bin/webdriver-manager is under /home/online
+71 verbose gentlyRm vacuuming /home/online/node_modules/.bin/webdriver-manager up to /home/online
+72 silly gentlyRm removing /home/online/node_modules/.bin/protractor
+73 silly gentlyRm removing /home/online/node_modules/.bin/webdriver-manager
+74 silly gentlyRm quitting because other entries in /home/online/node_modules/.bin
+75 silly gentlyRm quitting because other entries in /home/online/node_modules/.bin
+76 info postuninstall protractor@1.6.0
+77 verbose gentlyRm vacuuming /home/online/node_modules/protractor
+78 silly gentlyRm purging /home/online/node_modules/protractor
+79 verbose unlock done using /home/online/.npm/_locks/protractor-87c1e5910e911526.lock for /home/online/node_modules/protractor
+80 verbose stack Error: EACCES, unlink '/home/online/node_modules/protractor/node_modules/.bin/jasmine'
+81 verbose cwd /home/online/test-pro-cu/testpro0308
+82 error Linux 3.13.0-46-generic
+83 error argv "node" "/usr/local/bin/npm" "install" "protractor" "-dev"
+84 error node v0.10.33
+85 error npm  v2.1.11
+86 error path /home/online/node_modules/protractor/node_modules/.bin/jasmine
+87 error code EACCES
+88 error errno 3
+89 error Error: EACCES, unlink '/home/online/node_modules/protractor/node_modules/.bin/jasmine'
+89 error  { [Error: EACCES, unlink '/home/online/node_modules/protractor/node_modules/.bin/jasmine']
+89 error   errno: 3,
+89 error   code: 'EACCES',
+89 error   path: '/home/online/node_modules/protractor/node_modules/.bin/jasmine' }
+90 error Please try running this command again as root/Administrator.
+91 verbose exit [ 3, true ]
+92 verbose unbuild node_modules/protractor
+93 verbose gentlyRm vacuuming /home/online/node_modules/protractor
+94 silly gentlyRm purging /home/online/node_modules/protractor
+95 error error rolling back Error: EACCES, unlink '/home/online/node_modules/protractor/node_modules/.bin/jasmine'
+95 error error rolling back  { [Error: EACCES, unlink '/home/online/node_modules/protractor/node_modules/.bin/jasmine']
+95 error error rolling back   errno: 3,
+95 error error rolling back   code: 'EACCES',
+95 error error rolling back   path: '/home/online/node_modules/protractor/node_modules/.bin/jasmine' }
