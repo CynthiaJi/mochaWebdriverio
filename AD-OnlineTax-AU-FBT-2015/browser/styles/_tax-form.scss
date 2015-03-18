@@ -1,0 +1,95 @@
+.onlinetax {
+	width: auto;
+	padding: 0;
+}
+
+.onlinetax-form {
+	padding-top: $padding-large-horizontal;
+}
+
+
+.form-horizontal {
+	label {
+		line-height: 24px;
+		padding-top: 7px;
+	}
+
+	.form-input-toggle {
+		width: auto;
+		min-width: 50%;
+	}
+}
+
+.form-footer {
+	margin: $padding-large-horizontal 0;
+	padding-top: $padding-large-horizontal;
+	text-align: right;
+	border-top: 1px solid $gray;
+}
+
+.full-width-input {
+	> .form-input-toggle {
+		width: 100%;
+	}
+}
+
+.form-section {
+	> .form-group {
+		margin-left: 0;
+		margin-right: 0;
+
+		.form-group {
+			margin-bottom: 0;
+		}
+	}
+}
+
+.form-step-1 { 
+	margin-bottom: 0;
+	background: $gray-lighter;
+	padding: 30px 0px;
+	border-bottom: 1px dotted $gray;
+	margin: 0;	
+
+	h5 {
+		margin-bottom: 20px;
+	}
+}
+
+
+.form-step-2{ 	
+	background: $gray-lighter;
+	padding: 30px 0px;
+	margin: 0;
+}
+
+.form-step-last {
+	margin-bottom: 15px;
+	border: none;
+
+	.form-group {
+		margin-bottom: 0;
+	}
+}
+
+.table-row-header {
+	// width: 230px;
+	text-align: right;
+}
+
+table.onlinetax-table {
+	tr > td {
+		vertical-align: middle;
+	}
+}
+
+.input-group-noborder {
+	> .input-group-addon:first-child {
+		border: none;
+		background: none;
+	}
+
+	> .form-control:last-child {
+		border-radius: 4px;
+	}
+}

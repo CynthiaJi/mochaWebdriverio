@@ -1,0 +1,7 @@
+/**
+ * Created by online on 24/02/15.
+ */
+ --timeout 100000
+--reporter spec
+--recursive
+--growl

@@ -1,0 +1,465 @@
+/*
+Bootstrap overrides for elements that
+can not be customised in _variables.scss
+*/
+
+// Wrapper
+.wrapper {
+
+}
+
+// Page header
+.page-header {
+    border-width: 2px;
+}
+
+// Panels & Wells
+.panel,
+.well {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.panel-body {
+    > p:last-child {
+        margin-bottom: 0;
+    }
+}
+
+// Custom full-fixed panel
+.panel-fixed-full {
+    width: 100%;
+    max-width: 600px;
+    min-width: 280px;
+    margin: 6em auto 1em;
+    outline: 30px solid $gray-lighter;
+    text-align: center;
+
+    .panel-body {
+        padding: ($padding-base * 2) ($padding-base * 3);
+    }
+
+    .panel-heading {
+        background: none;
+        border: none;
+        padding: ($padding-base * 2) ($padding-base * 3) 0;
+        margin-bottom: -$padding-base;
+
+        > h1, h2, h3, h4, h5, h6 {
+            margin: 0;
+        }
+    }
+}
+
+// Progress
+.progress,
+.progress-bar {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+// Forms
+label {
+    position: relative; // Fix bootstrap absolute position at mobile widths
+    font-weight: normal;
+}
+
+.form-control {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    padding-left: $padding-small-horizontal;
+    padding-right: $padding-small-horizontal;
+}
+
+.radio, .checkbox {
+    @include clearfix();
+    label {
+        float: left; // Fix overflow bug
+    }
+}
+
+fieldset[disabled] {
+    opacity: 0.35;
+}
+
+// Tables
+.table {
+    thead {
+      tr {
+        border-bottom: 1px solid $gray;
+
+        th {
+          background-color: transparent;
+          border-width: 0;
+          padding: $table-cell-padding*2 $table-cell-padding;
+        }
+      }
+    }
+}
+
+.table-simple {
+    th {
+        background-color: transparent;
+        a {
+            font-size: 14px;
+            color: $text-color;
+        }
+    }
+}
+
+.table-fixed {
+    table-layout: fixed;
+    td {
+        @include text-overflow();
+    }
+}
+
+// Navs
+.nav {
+    .open > a {
+        &,
+        &:hover,
+        &:focus {
+            border-color: transparent;
+        }
+    }
+}
+
+.nav-pills {
+    background: $brand-primary;
+    padding: 10px $padding-base;
+    white-space: nowrap;
+    overflow:auto;
+    overflow-x: auto;
+
+    &.nav-pills-top {
+        margin: 0 -15px;
+    }
+
+    > li {
+        display: inline-block;
+        float: none;
+
+        &:last-child {
+            padding-right: $padding-base;
+        }
+
+        a {
+            color: rgba($white, .9);
+            padding: 7px 15px;
+        }
+
+        &.disabled a {
+            color: rgba($white, .9);
+            opacity: .4;
+        }
+
+        &.active a,
+        &.active:hover a,
+        &:hover a {
+            background: $gray-trans;
+        }
+
+        &.dropdown > a:focus {
+            background: none;
+        }
+
+        &.dropdown > a:hover,
+        &.dropdown.open > a {
+            background: $gray-trans;
+        }
+    }
+
+    .badge {
+        background: $gray-trans;
+    }
+
+    > li + li {
+        margin-left: 6px;
+    }
+}
+
+.navbar-nav {
+    margin: 0;
+
+    > li {
+        float: left;
+
+        > a {
+            padding: $padding-base;
+        }
+    }
+
+    // Dropdown in nav
+    .open {
+        .dropdown-menu {
+            z-index: 51;
+            position: absolute;
+            float: left;
+            width: auto;
+            margin-top: 0;
+            background-color: $dropdown-bg;
+            border: 1px solid $dropdown-border;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+
+            > li > a {
+                padding: 3px 20px;
+                line-height: inherit;
+
+                .navbar-default &,
+                .navbar-inverse &,
+                & {
+                    color: $dropdown-link-color;
+
+                    &:hover, &:focus {
+                        color: $dropdown-link-hover-color;
+                        background-color: $dropdown-link-hover-bg;
+                    }
+                }
+            }
+        }
+    }
+    // Badge
+    .badge {
+        background-color: $brand-warning;
+    }
+}
+
+.navbar-form {
+    margin-top: 13px;
+    margin-bottom: 13px;
+    max-width: 400px;
+    float: left;
+    box-shadow: none;
+
+    @media (max-width: $screen-xs-max) {
+        margin-top: 2px;
+        margin-bottom: 0;
+    }
+}
+
+// Tabs
+.nav-tabs {
+    border-width: 2px;
+
+    > li {
+        margin-bottom: -2px;
+
+        > a {
+            border-style: none none solid;
+            font-weight: 500;
+            color: $gray-dark;
+
+            &:hover, &:focus {
+                color: $brand-primary;
+            }
+        }
+    }
+}
+
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:hover,
+.nav-tabs > li.active > a:focus {
+    border-color: transparent transparent $brand-primary;
+    border-style: none none solid;
+    border-width: 2px;
+
+    .badge {
+        background-color: $brand-primary;
+    }
+}
+
+// Label
+.label {
+    font-weight: 500;
+
+    .label-close {
+        color: $white;
+        margin-left: 5px;
+    }
+
+    + .label {
+        margin-left: 5px;
+    }
+}
+.label-btn {
+    color: $white;
+    margin-left: 8px;
+    font-size: 16px;
+}
+
+// List Group
+.list-group-item,
+.list-group-item:first-child,
+.list-group-item:last-child {
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    border-right: none;
+    border-top: none;
+    border-left: none;
+    margin-bottom: 0;
+    // padding: $list-group-padding;
+}
+
+// Dropdown
+.navbar-inverse .navbar-nav .open .dropdown-menu > .dropdown-header {
+    border-color: $gray-light-trans;
+}
+.navbar-inverse .navbar-nav .open .dropdown-menu .divider {
+    background-color: $gray;
+}
+
+// Custom dropdown
+.dropdown-extended {
+    padding: 0;
+    border: 0;
+    min-width: 300px;
+
+    li:not(:last-child) {
+        border-top: 1px solid $gray-light-trans;
+    }
+
+    .navbar-nav .open & > li > a {
+        padding: 10px 20px;
+    }
+
+    // Media
+    .media-object {
+        max-width: 36px;
+        margin-top: 3px;
+    }
+
+    .media-body {
+
+    }
+
+    .media-details {
+        @include text-overflow();
+        margin-bottom: 0;
+        font-size: 14px;
+        display: block;
+        max-width: 210px;
+    }
+
+    .media-heading {
+        font-weight: 700;
+    }
+
+    .media-content {
+
+    }
+
+    .media-meta {
+        color: $gray-dark-trans;
+    }
+}
+
+.dropdown-header,
+.navbar-nav .open .dropdown-menu .dropdown-header {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: 700;
+    font-size: 16px;
+    color: $text-color;
+
+    .dropdown-header-link {
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 1.8;
+    }
+}
+
+.dropdown-cta {
+    .btn {
+        border-radius: 0;
+        font-size: 14px;
+        width: 100%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+}
+
+// Buttons
+.btn {
+    @media (max-width: $screen-sm) {
+        white-space: normal;
+    }
+    &:active, &.active {
+        @include box-shadow(none);
+    }
+
+    &.btn-default {
+        &:active, &.active, &:hover, &:focus {
+            background-color: $gray-lighter;
+        }
+    }
+}
+
+// Page header
+.page-header {
+    margin: 22px 0;
+}
+
+hr {
+    margin: 1em 0;
+}
+
+// Tooltips
+// TODO: look for existing mixins or create some
+.tooltip {
+  font-weight: bold;
+
+  &.in {
+    opacity: 1;
+  }
+
+  .tooltip-inner {
+    background-color: $gray-darker;
+    max-width: 250px;
+    padding: 14px 20px;
+  }
+
+  &.top, &.bottom {
+    padding: 8px 0;
+
+    .tooltip-arrow {
+      margin-left: -10px;
+    }
+  }
+
+  &.top {
+    .tooltip-arrow {
+      border-width: 8px 10px 0;
+      border-top-color: $gray-darker;
+    }
+  }
+
+  &.bottom {
+    .tooltip-arrow {
+      border-width: 0 10px 8px;
+      border-bottom-color: $gray-darker;
+    }
+  }
+
+  &.left, &.right {
+    padding: 0 8px;
+
+    .tooltip-arrow {
+      margin-top: -10px;
+    }
+  }
+
+  &.left {
+    .tooltip-arrow {
+      border-width: 10px 0 10px 8px;
+      border-left-color: $gray-darker;
+    }
+  }
+
+  &.right {
+    .tooltip-arrow {
+      border-width: 10px 8px 10px 0;
+      border-right-color: $gray-darker;
+    }
+  }
+}

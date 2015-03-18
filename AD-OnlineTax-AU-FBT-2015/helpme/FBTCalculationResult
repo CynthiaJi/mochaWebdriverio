@@ -1,0 +1,23 @@
+    ✓ MYOB Account - Sign in (12417ms)
+Tasks
+    ✓ Smoke - Tasks (3575ms)
+Accounting
+    ✓ Smoke - Accounting (3449ms)
+Documents
+    ✓ Smoke - Documents (3429ms)
+Add FBT Return
+    ✓ Tax - Add FBT Return (9415ms)
+Create Return
+    ✓ Tax - Create FBT Return (6523ms)
+successfully entered the TFN
+successfully entered the ABN
+    ✓ Tax - FBT Item 1- 4 (19235ms)
+    ✓ Tax - FBT Item 5- 8 (4716ms)
+successfully entered the data of the business details tab
+    ✓ Tax - FBT Item 9- 13 (2147ms)
+    1) Tax - FBT Calculation
+    2) Tax - FBT Calculation 9- 13
+
+
+  10 passing (1m)
+  2 failing

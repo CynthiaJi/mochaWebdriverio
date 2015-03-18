@@ -1,0 +1,92 @@
+
+var client = require('webdriverio');
+
+var client2 = require('webdriverjs-angular');
+
+var webdriverjs =require('webdriverjs-angular');
+
+
+initialate
+client2 = webdriverjs.remote(require('../../conf/webdriver-chrome.conf'));
+    client2.init(done);
+
+
+
+http://arisalexis.com/tag/tutorial/
+it('fill form',function(done) {
+client
+    .setValue('#firstName','aris')
+    .setValue('#lastName','alexis')
+    .setValue('#username','randomUser1')
+    .click('#password') //just to drive focus away
+    //to make the request to /users/check and get a neg response
+    .pause(1000)
+    .elements("i[class=glyphicon-remove]",function(err,res) {
+          assert.equal(res.value,0);
+     })
+     .call(done);
+
+
+
+http://code.tutsplus.com/tutorials/headless-functional-testing-with-selenium-and-phantomjs--net-30545
+client.url('http://example.com/')
+client.getTitle(function(title){
+    console.log('Title is', title);
+});
+client.setValue('#field', 'value');
+client.submitForm();
+client.end();
+
+https://gridlastic.com/webdriverio-example.html
+
+client
+    .url('http://google.com')
+    .setValue('*[name="q"]','webdriverio')
+    .click('*[name="btnG"]')
+    .pause(1000)
+    .session(function(err,res) {
+    console.log("Video: " + VIDEO_URL + res.value['webdriver.remote.sessionid']);
+	})
+    .end();
+
+
+https://github.com/webdriverio/webdriverio/blob/master/examples/webdriverio.with.mocha.js
+
+it('Github test',function(done) {
+        client
+            .url('https://github.com/')
+            .getElementSize('.header-logo-wordmark', function(err, result) {
+                assert(err === undefined);
+                assert(result.height === 26);
+                assert(result.width  === 37);
+            })
+            .getTitle(function(err, title) {
+                assert(err === undefined);
+                assert(title === 'GitHub · Build software better, together.');
+            })
+            .getCssProperty('a[href="/plans"]', 'color', function(err, result){
+                assert(err === undefined);
+                assert(result.value === 'rgba(65,131,196,1)');
+            })
+            .call(done);
+    });
+
+https://github.com/webdriverio/webdriverio/blob/master/examples/webdriverio.with.mocha.js
+it('Github test',function(done) {
+        client
+            .url('https://github.com/')
+            .getElementSize('.header-logo-wordmark', function(err, result) {
+                assert(err === undefined);
+                assert(result.height === 26);
+                assert(result.width  === 37);
+            })
+            .getTitle(function(err, title) {
+                assert(err === undefined);
+                assert(title === 'GitHub · Build software better, together.');
+            })
+            .getCssProperty('a[href="/plans"]', 'color', function(err, result){
+                assert(err === undefined);
+                assert(result.value === 'rgba(65,131,196,1)');
+            })
+            .call(done);
+    });

@@ -1,0 +1,22 @@
+{
+  "name": "mochaglenn",
+  "version": "1.0.0",
+  "description": "Mocha test from scratch",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Mocha",
+    "online",
+    "tax"
+  ],
+  "author": "Cynthia Ji",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^2.1.2",
+    "chai-as-promised": "^4.3.0",
+    "mocha": "^2.2.1",
+    "selenium-webdriver": "^2.45.1"
+  }
+}

@@ -1,0 +1,620 @@
+{
+  "id": "2b7105e4-0847-49c1-b796-c2a1ef166c31",
+  "formtype": "ato/fbt",
+  "year": "2015",
+  "startdate": "2014-04-01",
+  "enddate": "2015-03-31",
+  "fields": {
+    "ReportingParty.Identifiers.TaxFileNumber.Identifier": {
+      "value": "999999507",
+      "source": "entry"
+    },
+    "ReportingParty.Identifiers.AustralianBusinessNumber.Identifier": {
+      "value": "63084321853",
+      "source": "entry"
+    },
+
+    "Myob.ReportingParty.TrusteeSeniorPartner.Required": {
+      "value": "true",
+      "source": "entry"
+    },
+
+    "Myob.ReportingParty.TrusteeSeniorPartner.IndividualOrNonIndividual": {
+      "value": "Individual",
+      "source": "entry"
+    },
+    "ReportingParty.TrusteeSeniorPartner.PersonNameDetails.Title.Text": {
+      "value": "Mr",
+      "source": "entry"
+    },
+    "ReportingParty.TrusteeSeniorPartner.PersonNameDetails.FamilyName.Text": {
+      "value": "Alobama",
+      "source": "entry"
+    },
+    "ReportingParty.TrusteeSeniorPartner.PersonNameDetails.GivenName.Text": {
+    "value": "MacDonalds",
+    "source": "entry"
+  },
+    "ReportingParty.TrusteeSeniorPartner.PersonNameDetails.OtherGivenName.Text": {
+      "value": "Jimmy-Henry",
+      "source": "entry"
+    },
+    "ReportingParty.TrusteeSeniorPartner.PersonNameDetails.NameSuffix.Text": {
+      "value": "SNR",
+      "source": "entry"
+    },
+
+    "Myob.ReportingParty.Employer.IndividualOrNonIndividual": {
+      "value": "Non-individual",
+      "source": "entry"
+    },
+    "ReportingParty.Employer.OrganisationNameDetails.OrganisationalName.Text": {
+      "value": "Employer name",
+      "source": "entry"
+    },
+
+    "ReportingParty.Employer.Postal.AddressDetails.OverseasAddress.Indicator": {
+      "value": "false",
+      "source": "derived"
+    },
+    "ReportingParty.Employer.Postal.AddressDetails.Line1.Text": {
+      "value": "RP_Curr_POS_Addr_Line1",
+      "source": "entry"
+    },
+    "ReportingParty.Employer.Postal.AddressDetails.Line2.Text": {
+      "value": "RP_Curr_POS_Addr_Line2",
+      "source": "entry"
+    },
+    "ReportingParty.Employer.Postal.AddressDetails.Line3.Text": {
+      "value": "",
+      "source": "entry"
+    },
+    "ReportingParty.Employer.Postal.AddressDetails.Line4.Text": {
+      "value": "",
+      "source": "entry"
+    },
+    "ReportingParty.Employer.Postal.AddressDetails.LocalityName.Text": {
+      "value": "RP_Curr_POS_LocalName",
+      "source": "entry"
+    },
+    "ReportingParty.Employer.Postal.AddressDetails.Postcode.Text": {
+      "value": "2451",
+      "source": "entry"
+    },
+    "ReportingParty.Employer.Postal.AddressDetails.StateOrTerritory.Code": {
+      "value": "NSW",
+      "source": "entry"
+    },
+    "ReportingParty.Employer.Postal.AddressDetails.Country.Code": {
+      "value": "",
+      "source": "entry"
+    },
+    "ReportingParty.Employer.Postal.AddressDetails.CountryName.Text": {
+      "value": "",
+      "source": "entry"
+    },
+
+    "Myob.ReportingParty.Employer.Previous.Name.Required": {
+      "value": "true",
+      "source": "entry"
+    },
+    "Myob.ReportingParty.Employer.Previous.IndividualOrNonIndividual": {
+      "value": "Individual",
+      "source": "entry"
+    },
+    "ReportingParty.Employer.Previous.PersonNameDetails.Title.Text": {
+      "value": "Mrs",
+      "source": "entry"
+    },
+    "ReportingParty.Employer.Previous.PersonNameDetails.FamilyName.Text": {
+      "value": "O'Yingbot",
+      "source": "entry"
+    },
+    "ReportingParty.Employer.Previous.PersonNameDetails.GivenName.Text": {
+      "value": "Julianna",
+      "source": "entry"
+    },
+    "ReportingParty.Employer.Previous.PersonNameDetails.OtherGivenName.Text": {
+      "value": "Jonathan-Jones",
+      "source": "entry"
+    },
+    "ReportingParty.Employer.Previous.PersonNameDetails.NameSuffix.Text": {
+      "value": "JNR",
+      "source": "entry"
+    },
+
+    "Myob.ReportingParty.Employer.Previous.Required": {
+      "value": "true",
+      "source": "entry"
+    },
+    "ReportingParty.Employer.Previous.AddressDetails.OverseasAddress.Indicator": {
+      "value": "false",
+      "source": "derived"
+    },
+    "ReportingParty.Employer.Previous.Postal.AddressDetails.Line1.Text": {
+      "value": "C/- Someone Interested",
+      "source": "entry"
+    },
+    "ReportingParty.Employer.Previous.Postal.AddressDetails.Line2.Text": {
+      "value": "Level 99, 665 Georgian Rd",
+      "source": "entry"
+    },
+    "ReportingParty.Employer.Previous.Postal.AddressDetails.Line3.Text": {
+      "value": "",
+      "source": "entry"
+    },
+    "ReportingParty.Employer.Previous.Postal.AddressDetails.Line4.Text": {
+      "value": "",
+      "source": "entry"
+    },
+    "ReportingParty.Employer.Previous.Postal.AddressDetails.LocalityName.Text": {
+      "value": "CA1895-SF",
+      "source": "entry"
+    },
+    "ReportingParty.Employer.Previous.Postal.AddressDetails.StateOrTerritory.Code": {
+      "value": "SF",
+      "source": "entry"
+    },
+    "ReportingParty.Employer.Previous.Postal.AddressDetails.Postcode.Text": {
+      "value": "1895-4567",
+      "source": "entry"
+    },
+    "ReportingParty.Employer.Previous.Postal.AddressDetails.Country.Code": {
+      "value": "us",
+      "source": "entry"
+    },
+    "ReportingParty.Employer.Previous.Postal.AddressDetails.CountryName.Text": {
+      "value": "",
+      "source": "entry"
+    },
+
+    "Myob.ReportingParty.BusinessTradingName.Required": {
+      "value": "true",
+      "source": "entry"
+    },
+    "ReportingParty.BusinessTradingName.OrganisationNameDetails.OrganisationalName.Text": {
+      "value": "My Own Business",
+      "source": "entry"
+    },
+
+    "Myob.ReportingParty.BusinessTradingAddress.Required": {
+      "value": "true",
+      "source": "entry"
+    },
+    "ReportingParty.BusinessTradingAddress.AddressDetails.OverseasAddress.Indicator": {
+      "value": "false",
+      "source": "derived"
+    },
+    "ReportingParty.BusinessTradingAddress.AddressDetails.Line1.Text": {
+      "value": "33/1888 Long Street",
+      "source": "entry"
+    },
+    "ReportingParty.BusinessTradingAddress.AddressDetails.Line2.Text": {
+      "value": "Tall Building",
+      "source": "entry"
+    },
+    "ReportingParty.BusinessTradingAddress.AddressDetails.Line3.Text": {
+      "value": "",
+      "source": "entry"
+    },
+    "ReportingParty.BusinessTradingAddress.AddressDetails.Line4.Text": {
+      "value": "",
+      "source": "entry"
+    },
+    "ReportingParty.BusinessTradingAddress.AddressDetails.LocalityName.Text": {
+      "value": "Summer Beach",
+      "source": "entry"
+    },
+    "ReportingParty.BusinessTradingAddress.AddressDetails.StateOrTerritory.Code": {
+      "value": "QLD",
+      "source": "entry"
+    },
+    "ReportingParty.BusinessTradingAddress.AddressDetails.Postcode.Text": {
+      "value": "3456",
+      "source": "entry"
+    },
+    "ReportingParty.BusinessTradingAddress.AddressDetails.Country.Code": {
+      "value": "au",
+      "source": "entry"
+    },
+    "ReportingParty.BusinessTradingAddress.AddressDetails.CountryName.Text": {
+      "value": "",
+      "source": "entry"
+    },
+
+    "Myob.ReportingParty.TrusteeSeniorPartner.Previous.Required": {
+      "value": "true",
+      "source": "entry"
+    },
+    "Myob.ReportingParty.TrusteeSeniorPartner.Previous.IndividualOrNonIndividual": {
+      "value": "Individual",
+      "source": "entry"
+    },
+    "ReportingParty.TrusteeSeniorPartner.Previous.PersonNameDetails.Title.Text": {
+      "value": "SIR",
+      "source": "entry"
+    },
+    "ReportingParty.TrusteeSeniorPartner.Previous.PersonNameDetails.FamilyName.Text": {
+      "value": "Guylian",
+      "source": "entry"
+    },
+    "ReportingParty.TrusteeSeniorPartner.Previous.PersonNameDetails.GivenName.Text": {
+      "value": "Billy",
+      "source": "entry"
+    },
+    "ReportingParty.TrusteeSeniorPartner.Previous.PersonNameDetails.OtherGivenName.Text": {
+      "value": "Gostham",
+      "source": "entry"
+    },
+    "ReportingParty.TrusteeSeniorPartner.Previous.PersonNameDetails.NameSuffix.Text": {
+      "value": "JP",
+      "source": "entry"
+    },
+
+    "ReportingParty.Contact.Title.Text": {
+      "value": "Mr",
+      "source": "entry"
+    },
+    "ReportingParty.Contact.FamilyName.Text": {
+      "value": "William",
+      "source": "entry"
+    },
+    "ReportingParty.Contact.GivenName.Text": {
+      "value": "Andrew",
+      "source": "entry"
+    },
+    "ReportingParty.Contact.OtherGivenName.Text": {
+      "value": "John'Brien",
+      "source": "entry"
+    },
+    "ReportingParty.Contact.NameSuffix.Text": {
+      "value": "II",
+      "source": "entry"
+    },
+    "ReportingParty.ElectronicContact.Telephone.Area.Code": {
+      "value": "02",
+      "source": "entry"
+    },
+    "ReportingParty.ElectronicContact.Telephone.Minimal.Number": {
+      "value": "98764321",
+      "source": "entry"
+    },
+    "ReportingParty.ElectronicContact.ElectronicMail.Address.Text": {
+      "value": "my.mail@xyz.abc",
+      "source": "entry"
+    },
+
+    "ReportingParty.Remuneration.FringeBenefits.Recipients.Count": {
+      "value": "1",
+      "source": "entry"
+    },
+
+    "ReportingParty.Report.CompletionHours.Number": {
+      "value": "8",
+      "source": "entry"
+    },
+
+    "ReportingParty.Lodgment.FinalReturn.Indicator": {
+      "value": "false",
+      "source": "entry"
+    },
+
+    "Myob.FringeBenefits.RebatableEmployer": {
+      "value": "false",
+      "source": "entry"
+    },
+
+    "ReportingParty.FinancialInstitutionAccount.BankStateBranch.Number": {
+      "value": "101202",
+      "source": "entry"
+    },
+    "ReportingParty.FinancialInstitutionAccount.FinancialInstitutionAccount.Number": {
+      "value": "987652",
+      "source": "entry"
+    },
+    "ReportingParty.FinancialInstitutionAccount.FinancialInstitutionAccountName.Text": {
+      "value": "Some One Account",
+      "source": "entry"
+    },
+
+    "Myob.FringeBenefits.PublicBenevolentInstitution": {
+      "value": "false",
+      "source": "entry"
+    },
+
+    "ReportingParty.Remuneration.FringeBenefits.Type1Aggregate.Amount": {
+      "value": "29000",
+      "source": "entry"
+    },
+    "ReportingParty.FringeBenefitsTax.Type1Aggregate.Amount": {
+      "value": "",
+      "source": "calculation"
+    },
+
+    "ReportingParty.Remuneration.FringeBenefits.Type2Aggregate.Amount": {
+      "value": "60000",
+      "source": "entry"
+    },
+    "ReportingParty.FringeBenefitsTax.Type2Aggregate.Amount": {
+      "value": "",
+      "source": "calculation"
+    },
+    "ReportingParty.Remuneration.FringeBenefits.AggregateNonExempt.Amount": {
+      "value": "",
+      "source": "entry"
+    },
+
+    "ReportingParty.Remuneration.FringeBenefits.TaxableTotal.Amount": {
+      "value": "",
+      "source": "calculation"
+    },
+
+    "ReportingParty.FringeBenefitsTax.Payable.Amount": {
+      "value": "",
+      "source": "calculation"
+    },
+
+    "ReportingParty.FringeBenefitsTax.NonRebatableAggregate.Amount": {
+      "value": "",
+      "source": "entry"
+    },
+
+    "ReportingParty.FringeBenefitsTax.Rebate.Amount": {
+      "value": "",
+      "source": "calculation"
+    },
+
+    "ReportingParty.FringeBenefitsTax.Liability.Amount": {
+      "value": "",
+      "source": "calculation"
+    },
+
+    "ReportingParty.FringeBenefitsTax.LiabilityInstalmentsTotal.Amount": {
+      "value": "0",
+      "source": "entry"
+    },
+
+    "ReportingParty.FringeBenefitsTax.AdjustmentDue.Amount": {
+      "value": "",
+      "source": "calculation"
+    },
+
+    "ReportingParty.CarsStatutoryFormula.Remuneration.FringeBenefits.ItemsProvided.Number": {
+      "value": "2",
+      "source": "entry"
+    },
+    "ReportingParty.CarsStatutoryFormula.Remuneration.FringeBenefits.BenefitGrossTaxable.Amount": {
+      "value": "12000",
+      "source": "entry"
+    },
+    "ReportingParty.CarsStatutoryFormula.Remuneration.FringeBenefits.EmployeeContribution.Amount": {
+      "value": "2000",
+      "source": "entry"
+    },
+    "ReportingParty.CarsStatutoryFormula.Remuneration.FringeBenefits.BenefitNetTaxable.Amount": {
+      "value": "",
+      "source": "calculation"
+    },
+
+    "ReportingParty.CarsOperatingCost.Remuneration.FringeBenefits.ItemsProvided.Number": {
+      "value": "1",
+      "source": "entry"
+    },
+    "ReportingParty.CarsOperatingCost.Remuneration.FringeBenefits.BenefitGrossTaxable.Amount": {
+      "value": "3000",
+      "source": "entry"
+    },
+    "ReportingParty.CarsOperatingCost.Remuneration.FringeBenefits.EmployeeContribution.Amount": {
+      "value": "0",
+      "source": "entry"
+    },
+    "ReportingParty.CarsOperatingCost.Remuneration.FringeBenefits.BenefitNetTaxable.Amount": {
+      "value": "",
+      "source": "calculation"
+    },
+
+    "ReportingParty.LoansGranted.Remuneration.FringeBenefits.ItemsProvided.Number": {
+      "value": "1",
+      "source": "entry"
+    },
+    "ReportingParty.LoansGranted.Remuneration.FringeBenefits.BenefitGrossTaxable.Amount": {
+      "value": "1330",
+      "source": "entry"
+    },
+    "ReportingParty.LoansGranted.Remuneration.FringeBenefits.Reduction.Amount": {
+      "value": "0",
+      "source": "entry"
+    },
+    "ReportingParty.LoansGranted.Remuneration.FringeBenefits.BenefitNetTaxable.Amount": {
+      "value": "",
+      "source": "calculation"
+    },
+
+    "ReportingParty.DebtWaiver.Remuneration.FringeBenefits.BenefitGrossTaxable.Amount": {
+      "value": "500",
+      "source": "entry"
+    },
+    "ReportingParty.DebtWaiver.Remuneration.FringeBenefits.BenefitNetTaxable.Amount": {
+      "value": "",
+      "source": "calculation"
+    },
+
+    "ReportingParty.ExpensePayment.Remuneration.FringeBenefits.BenefitGrossTaxable.Amount": {
+      "value": "1200",
+      "source": "entry"
+    },
+    "ReportingParty.ExpensePayment.Remuneration.FringeBenefits.EmployeeContribution.Amount": {
+      "value": "0",
+      "source": "entry"
+    },
+    "ReportingParty.ExpensePayment.Remuneration.FringeBenefits.Reduction.Amount": {
+      "value": "600",
+      "source": "entry"
+    },
+    "ReportingParty.ExpensePayment.Remuneration.FringeBenefits.BenefitNetTaxable.Amount": {
+      "value": "",
+      "source": "calculation"
+    },
+
+    "ReportingParty.Housing.Remuneration.FringeBenefits.ItemsProvided.Number": {
+      "value": "1",
+      "source": "entry"
+    },
+    "ReportingParty.Housing.Remuneration.FringeBenefits.BenefitGrossTaxable.Amount": {
+      "value": "13000",
+      "source": "entry"
+    },
+    "ReportingParty.Housing.Remuneration.FringeBenefits.EmployeeContribution.Amount": {
+      "value": "2600",
+      "source": "entry"
+    },
+    "ReportingParty.Housing.Remuneration.FringeBenefits.BenefitNetTaxable.Amount": {
+      "value": "",
+      "source": "calculation"
+    },
+
+    "ReportingParty.EmployeeReceiving.Remuneration.FringeBenefits.ItemsProvided.Number": {
+      "value": "1",
+      "source": "entry"
+    },
+    "ReportingParty.EmployeeReceiving.Remuneration.FringeBenefits.BenefitGrossTaxable.Amount": {
+      "value": "15184",
+      "source": "entry"
+    },
+    "ReportingParty.EmployeeReceiving.Remuneration.FringeBenefits.Reduction.Amount": {
+      "value": "13000",
+      "source": "entry"
+    },
+    "ReportingParty.EmployeeReceiving.Remuneration.FringeBenefits.BenefitNetTaxable.Amount": {
+      "value": "",
+      "source": "calculation"
+    },
+
+    "ReportingParty.Board.Remuneration.FringeBenefits.BenefitGrossTaxable.Amount": {
+      "value": "21900",
+      "source": "entry"
+    },
+    "ReportingParty.Board.Remuneration.FringeBenefits.EmployeeContribution.Amount": {
+      "value": "0",
+      "source": "entry"
+    },
+    "ReportingParty.Board.Remuneration.FringeBenefits.Reduction.Amount": {
+      "value": "0",
+      "source": "entry"
+    },
+    "ReportingParty.Board.Remuneration.FringeBenefits.BenefitNetTaxable.Amount": {
+      "value": "",
+      "source": "calculation"
+    },
+
+    "ReportingParty.Property.Remuneration.FringeBenefits.BenefitGrossTaxable.Amount": {
+      "value": "2000",
+      "source": "entry"
+    },
+    "ReportingParty.Property.Remuneration.FringeBenefits.EmployeeContribution.Amount": {
+      "value": "300",
+      "source": "entry"
+    },
+    "ReportingParty.Property.Remuneration.FringeBenefits.Reduction.Amount": {
+      "value": "500",
+      "source": "entry"
+    },
+    "ReportingParty.Property.Remuneration.FringeBenefits.BenefitNetTaxable.Amount": {
+      "value": "",
+      "source": "calculation"
+    },
+
+    "ReportingParty.IncomeTaxExempt.Remuneration.FringeBenefits.BenefitGrossTaxable.Amount": {
+      "value": "5000",
+      "source": "entry"
+    },
+    "ReportingParty.IncomeTaxExempt.Remuneration.FringeBenefits.BenefitNetTaxable.Amount": {
+      "value": "",
+      "source": "calculation"
+    },
+
+    "ReportingParty.OtherBenefits.Remuneration.FringeBenefits.BenefitGrossTaxable.Amount": {
+      "value": "8000",
+      "source": "entry"
+    },
+    "ReportingParty.OtherBenefits.Remuneration.FringeBenefits.EmployeeContribution.Amount": {
+      "value": "0",
+      "source": "entry"
+    },
+    "ReportingParty.OtherBenefits.Remuneration.FringeBenefits.Reduction.Amount": {
+      "value": "6000",
+      "source": "entry"
+    },
+    "ReportingParty.OtherBenefits.Remuneration.FringeBenefits.BenefitNetTaxable.Amount": {
+      "value": "",
+      "source": "calculation"
+    },
+
+    "ReportingParty.CarParking.Remuneration.FringeBenefits.BenefitGrossTaxable.Amount": {
+      "value": "20000",
+      "source": "entry"
+    },
+    "ReportingParty.CarParking.Remuneration.FringeBenefits.EmployeeContribution.Amount": {
+      "value": "0",
+      "source": "entry"
+    },
+    "ReportingParty.CarParking.Remuneration.FringeBenefits.BenefitNetTaxable.Amount": {
+      "value": "",
+      "source": "calculation"
+    },
+
+    "ReportingParty.MealEntertainment.Remuneration.FringeBenefits.BenefitGrossTaxable.Amount": {
+      "value": "2000",
+      "source": "entry"
+    },
+    "ReportingParty.MealEntertainment.Remuneration.FringeBenefits.BenefitNetTaxable.Amount": {
+      "value": "",
+      "source": "calculation"
+    },
+
+    "Intermediary.Abn": {
+      "value": "62483468038",
+      "source": "entry"
+    },
+
+    "Intermediary.PersonUnstructuredName.FullName.Text": {
+      "value": "INT-PUN FullName",
+      "source": "entry"
+    },
+    "Intermediary.Identifiers.TaxAgentNumber.Identifier": {
+      "value": "12345",
+      "source": "entry"
+    },
+    "Intermediary.Declaration.SignatoryIdentifier.Text": {
+      "value": "INT_DeclSign_Identier",
+      "source": "entry"
+    },
+    "Intermediary.ElectronicContact.Telephone.Area.Code": {
+      "value": "03",
+      "source": "entry"
+    },
+    "Intermediary.ElectronicContact.Telephone.Minimal.Number": {
+      "value": "51432113",
+      "source": "entry"
+    },
+    "Intermediary.Identifiers.TaxAgentClientReference.Text": {
+      "value": "001",
+      "source": "entry"
+    },
+    "Intermediary.Declaration.Signature.Date": {
+      "value": "23102014",
+      "source": "entry"
+    },
+
+    "ReportingParty.Declaration.SignatoryIdentifier.Text": {
+      "value": "RP_DeclSign_Identier",
+      "source": "entry"
+    },
+
+    "ReportingParty.Declaration.Signature.Date": {
+      "value": "23102014",
+      "source": "entry"
+    }
+
+  }
+}
