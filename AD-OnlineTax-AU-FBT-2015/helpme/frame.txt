@@ -1,8 +1,0 @@
-<h2 class="ng-binding">2015 Fringe Benefits Tax Return</h2>
-</div>
-<ul class="nav nav-tabs" style="margin-bottom: 15px">
-<li class="active" ng-class="{active: visiblePage === 'page-1'}">
-<a ng-click="togglePage('page-1')" href="#">Business Details</a>
-</li>
-<li class="" ng-class="{active: visiblePage === 'page-2'}">
-<a ng-click="togglePage('page-2')" href="#">Return Calculation Details</a>
