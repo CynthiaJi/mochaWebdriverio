@@ -3,7 +3,43 @@
 
 //verify value before set value , only blank then set value. 2015/03/14
 //it('Tax - Postal Address', function (done) working as 2015 March 14
- 
+
+/*
+ TaxOnlineTest
+Title was: MYOB Account - Sign in
+    ✓ 2 SecurityPage (7343ms)
+Title was: Practice Online
+    ✓ 3 MYOB Account - Sign in (4823ms)
+Tasks
+    ✓ 4 Smoke - Tasks (13674ms)
+Accounting
+    ✓ 5 Smoke - Accounting (12876ms)
+Documents
+    ✓ 6 Smoke - Documents (12588ms)
+Add FBT Return
+    ✓ 7 Tax - Add FBT Return (17128ms)
+Create Return
+    ✓ 8 Tax - Create FBT Return (32755ms)
+    - 9 Tax - Pick Exsit FBT Return
+212511415
+212511415
+    ✓ 10 Tax - FBT Item TFN (20420ms)
+15752416749
+    ✓ 11 Tax - FBT Item ABN (16373ms)
+    ✓ 12C Tax - Postal Address (49610ms)
+    ✓ 13 FBT Item Contact (58857ms)
+    ✓ 13B FBT Item Contact (68031ms)
+    ✓ 14 FBT ElectronicTransfer (46251ms)
+    ✓ 21 Car Calculation (50081ms)
+    ✓ 22 LoansGranted Calculation (24874ms)
+    ✓ 23 Debtwaiver (16726ms)
+
+
+  16 passing (8m)
+  1 pending
+
+
+*/ 
 'use strict';
 
 
@@ -153,8 +189,8 @@ describe('TaxOnlineTest', function () {
    ok ✓ MYOB Account - Sign in (11467ms)
 
    */
-   //xit
-  xit('4 Smoke - Tasks', function (done) {
+   //it
+  it('4 Smoke - Tasks', function (done) {
     client
       .withAngular()
       .click('a[href="/tasks"]')
@@ -165,8 +201,8 @@ describe('TaxOnlineTest', function () {
       .pause(mywait)
       .call(done);
   });
-  //xit
-  xit('5 Smoke - Accounting', function (done) {
+  //it
+  it('5 Smoke - Accounting', function (done) {
     client
       .withAngular()
       .click('a[href="/ledgers"]')
@@ -177,8 +213,8 @@ describe('TaxOnlineTest', function () {
       .pause(mywait)
       .call(done);
   });
-  //xit
-  xit('6 Smoke - Documents', function (done) {
+  //it
+  it('6 Smoke - Documents', function (done) {
     client
       .withAngular()
       .click('a[href="/documents"]')
@@ -218,7 +254,7 @@ describe('TaxOnlineTest', function () {
       .call(done);
   });
 
-//xit
+//it
   it('8 Tax - Create FBT Return', function (done) {
     client
       .withAngular()
@@ -256,33 +292,32 @@ xit('9 Tax - Pick Exsit FBT Return', function (done) {
       .call(done);
   });
   // Enter the details on the Business details tab
-//xit
+//it
   it('10 Tax - FBT Item TFN', function (done) {
     client
        .withAngular()
       .frame('iFrameResizer0') //Identifying the frame when create a new FBT return
-      .getValue('[ng-model="form.fields[\'ReportingParty.Identifiers.TaxFileNumber.Identifier\'].value"]', function(err, value) {
-        
+      .waitFor('[ng-model="form.fields[\'ReportingParty.Identifiers.TaxFileNumber.Identifier\'].value"]',2000)
+      .getValue('[ng-model="form.fields[\'ReportingParty.Identifiers.TaxFileNumber.Identifier\'].value"]', function(err,value){
          if (typeof value != 'undefined') {
           mytfn01 = value;
-          //console.log(value);
+          console.log(value);
          }
         else{
         client.setValue('[ng-model="form.fields[\'ReportingParty.Identifiers.TaxFileNumber.Identifier\'].value"]',mytfn01);  
-        }
-       })
-      .click('[ng-click="save(form)"]')
+          }
+      })
       .pause(mywait)
-      //. setValue('[ng-model="form.fields[\'ReportingParty.Identifiers.TaxFileNumber.Identifier\'].value"]',mytfn01)
       .getValue('[ng-model="form.fields[\'ReportingParty.Identifiers.TaxFileNumber.Identifier\'].value"]', function(err, value) {
         console.log(value);
         assert(value === mytfn01);
       })
         .pause(mywait)
+        .click('[ng-click="save(form)"]')
         .call(done);
   });
-//xit
-  xit('11 Tax - FBT Item ABN', function (done) {
+//it
+  it('11 Tax - FBT Item ABN', function (done) {
   client
     .withAngular()
     .getValue('[ng-model="form.fields[\'ReportingParty.Identifiers.AustralianBusinessNumber.Identifier\'].value"]', function(err, value) {
@@ -309,44 +344,11 @@ xit('9 Tax - Pick Exsit FBT Return', function (done) {
   //111217337
   //ok  ✓ 10 Tax - FBT Item TFN (17235ms)
 //26133219437
-//ok   ✓ 11 Tax - FBT Item ABN (17953ms)
-
+  //ok   ✓ 11 Tax - FBT Item ABN (17953ms)
 
 //ok✓ 12B Tax - Postal Address (18838ms)
 //the state cannot be selected.
-//Callstack:
-//     -> element("[ng-model=\"form.fields['ReportingParty.Employer.Postal.AddressDetails.StateOrTerritory.Code'].value\"]")
- //    -> element("[ng-model=\"form.fields['ReportingParty.Employer.Postal.AddressDetails.StateOrTerritory.Code'].value\"]")
- //    -> selectByValue("[ng-model=\"form.fields['ReportingParty.Employer.Postal.AddressDetails.StateOrTerritory.Code'].value\"]","WA")
- //    -> selectByValue("[ng-model=\"form.fields['ReportingParty.Employer.Postal.AddressDetails.StateOrTerritory.Code'].value\"]","WA")
- //    -> selectByValue("[ng-model=\"form.fields['ReportingParty.Employer.Postal.AddressDetails.StateOrTerritory.Code'].value\"]","WA")
-//<select disabled="disabled" class="form-control form-input-toggle ng-pristine ng-untouched ng-valid ng-valid-required" ng-model="form.fields['ReportingParty.Employer.Postal.AddressDetails.StateOrTerritory.Code']" ng-options="state.name for state in selectValues.States track by state.name" ng-change="run()" required="" ng-disabled="!editable(form)"><option class="" value="">Select...</option><option label="ACT" value="ACT">ACT</option><option label="NSW" value="NSW">NSW</option><option label="NT" value="NT">NT</option><option label="QLD" value="QLD">QLD</option><option label="SA" value="SA">SA</option><option label="TAS" value="TAS">TAS</option><option label="VIC" value="VIC">VIC</option><option label="WA" value="WA">WA</option></select>
-it('12B Tax - Postal Address', function (done) {
-  client
-    .withAngular()
-    .setValue('[ng-model="form.fields[\'ReportingParty.Employer.Postal.AddressDetails.Line1.Text\'].value"]',myaddr) 
-    .setValue('[ng-model="form.fields[\'ReportingParty.Employer.Postal.AddressDetails.Line2.Text\'].value"]',myaddr) 
-        //Enter Addressline1
-    .setValue('[ng-model="form.fields[\'ReportingParty.Employer.Postal.AddressDetails.LocalityName.Text\'].value"]',mysuburb) 
-    .getValue('[ng-model="form.fields[\'ReportingParty.Employer.Postal.AddressDetails.LocalityName.Text\'].value"]',function(err,value){
-      assert(value === mysuburb);
-    }) 
-      // Enter the suburb
-      //.selectByValue('select.ng-dirty', mystate)
-      //.selectByValue('html/body/div[1]/form/div/div[16]/div[2]/div[5]/div[2]/select', mystate)
-
-    //.selectByValue('[id="input.ReportingParty.Employer.Postal.AddressDetails.StateOrTerritory.Code"]', mystate) 
-    //.selectByValue('[ng-model="form.fields[\'ReportingParty.Employer.Postal.AddressDetails.StateOrTerritory.Code\'].value"]', mystate)
-      //Select the state
-      ////'[id="input.ReportingParty.Employer.Postal.AddressDetails.Line1.Text"]'
-    .setValue('[id="input.ReportingParty.Employer.Postal.AddressDetails.Postcode.Text"]',myPostcode) 
-      //Enter the Postal code
-     .click('[ng-click="save(form)"]')
-      .pause(mywait)
-      .call(done);
-     
-  });
-//added 2015 March 23 - can select State value from drop down
+//
 //✓ 12C Tax - Postal Address (49214ms)
 
 it('12C Tax - Postal Address', function (done) {
@@ -359,9 +361,12 @@ it('12C Tax - Postal Address', function (done) {
     .getValue('[ng-model="form.fields[\'ReportingParty.Employer.Postal.AddressDetails.LocalityName.Text\'].value"]',function(err,value){
       assert(value === mysuburb);
     }) 
-    
+    //<select class="form-control form-input-toggle ng-pristine ng-valid ng-valid-required ng-touched" 
     //ng-model="form.fields['ReportingParty.Employer.Postal.AddressDetails.StateOrTerritory.Code']" 
-    //ACT NSW NT QLD SA TAS VIC WA
+    //ng-options="state.name for state in selectValues.States track by state.name" ng-change="run()" 
+    //required="" ng-disabled="!editable(form)"><option value="" class="">Select...</option><option value="ACT" label="ACT">ACT</option><option value="NSW" label="NSW">NSW</option><option value="NT" label="NT">NT</option><option value="QLD" label="QLD">QLD</option><option value="SA" label="SA">SA</option><option value="TAS" label="TAS">TAS</option><option value="VIC" label="VIC">VIC</option><option value="WA" label="WA">WA</option></select>
+    
+  
     .waitFor('[ng-model="form.fields[\'ReportingParty.Employer.Postal.AddressDetails.StateOrTerritory.Code\']"]', 2000)
     .selectByValue('[ng-model="form.fields[\'ReportingParty.Employer.Postal.AddressDetails.StateOrTerritory.Code\']"]', mystate)
 
@@ -374,10 +379,9 @@ it('12C Tax - Postal Address', function (done) {
       .call(done);
      
   });
+
 //cannot do select by value
 //ok ✓ 13 FBT Item Contact (37218ms)
-
-
 
  it('13 FBT Item Contact', function (done) {
     client
@@ -419,8 +423,7 @@ it('12C Tax - Postal Address', function (done) {
       .pause(mywait)
       .call(done);
   });
-
-
+//with title selection
 //   ✓ 13B FBT Item Contact (67156ms)
 it('13B FBT Item Contact', function (done) {
     client
@@ -463,8 +466,6 @@ it('13B FBT Item Contact', function (done) {
       .call(done);
  
     })
-//✓ 14 FBT ElectronicTransfer (41475ms)
-
 it('14 FBT ElectronicTransfer', function (done) {
     client
     .withAngular()
@@ -489,59 +490,9 @@ it('14 FBT ElectronicTransfer', function (done) {
       .pause(mywait)
       .call(done);
   });
-// ✓ 21 Car Calculation (61755ms)
-// added on 2015 March 23
-xit('21 Car+Loan Calculation', function (done) {
-  var carAmount = 1000;
-  var carContri =100;
-    client
-      .withAngular()
-      //Identifying the frame
-      .click('[ng-click="togglePage(\'page-2\')"]')
-      //Cars using the Statutory formula
-      .setValue('[ng-model="form.fields[\'ReportingParty.CarsStatutoryFormula.Remuneration.FringeBenefits.ItemsProvided.Number\'].value"]', '1')
-      .setValue('[ng-model="form.fields[\'ReportingParty.CarsStatutoryFormula.Remuneration.FringeBenefits.BenefitGrossTaxable.Amount\'].value"]', carAmount)
-      .setValue('[ng-model="form.fields[\'ReportingParty.CarsStatutoryFormula.Remuneration.FringeBenefits.EmployeeContribution.Amount\'].value"]', carContri)
-      //<input id="input.ReportingParty.CarsStatutoryFormula.Remuneration.FringeBenefits.BenefitNetTaxable.Amount" type="text" 
-      //ng-model="form.fields['ReportingParty.CarsStatutoryFormula.Remuneration.FringeBenefits.BenefitNetTaxable.Amount'].value"
-      // ng-change="run()" class="form-control ng-pristine ng-valid ng-touched" ng-readonly="form.fields['ReportingParty.CarsStatutoryFormula.Remuneration.FringeBenefits.BenefitNetTaxable.Amount'].source === 'calculation'" source-selection="ReportingParty.CarsStatutoryFormula.Remuneration.FringeBenefits.BenefitNetTaxable.Amount" ng-disabled="!editable(form)" readonly="readonly">
-      .getValue('[ng-model="form.fields[\'ReportingParty.CarsStatutoryFormula.Remuneration.FringeBenefits.BenefitNetTaxable.Amount\'].value"]', function(err, value){
-        assert(value == (carAmount - carContri));
-      })
-      //Cars using the operating cost method
-      //<input id="input.ReportingParty.CarsOperatingCost.Remuneration.FringeBenefits.BenefitNetTaxable.Amount" type="text" 
-      //ng-model="form.fields['ReportingParty.CarsOperatingCost.Remuneration.FringeBenefits.BenefitNetTaxable.Amount'].value" ng-change="run()" class="form-control ng-pristine ng-valid ng-touched" ng-readonly="form.fields['ReportingParty.CarsOperatingCost.Remuneration.FringeBenefits.BenefitNetTaxable.Amount'].source === 'calculation'" source-selection="ReportingParty.CarsOperatingCost.Remuneration.FringeBenefits.BenefitNetTaxable.Amount" ng-disabled="!editable(form)" readonly="readonly">
-      .setValue('[ng-model="form.fields[\'ReportingParty.CarsOperatingCost.Remuneration.FringeBenefits.ItemsProvided.Number\'].value"]', "2")
-      .setValue('[ng-model="form.fields[\'ReportingParty.CarsOperatingCost.Remuneration.FringeBenefits.BenefitGrossTaxable.Amount\'].value"]', carAmount)
-      .setValue('[ng-model="form.fields[\'ReportingParty.CarsOperatingCost.Remuneration.FringeBenefits.EmployeeContribution.Amount\'].value"]', carContri)
-      .getValue('[ng-model="form.fields[\'ReportingParty.CarsOperatingCost.Remuneration.FringeBenefits.BenefitNetTaxable.Amount\'].value"]', function(err,value){
-         assert(value == (carAmount - carContri));
-      })
-      //loans granted
-      //<input id="input.ReportingParty.LoansGranted.Remuneration.FringeBenefits.ItemsProvided.Number" type="text" 
-      //ng-model="form.fields['ReportingParty.LoansGranted.Remuneration.FringeBenefits.ItemsProvided.Number'].value" ng-change="run()" class="form-control ng-pristine ng-valid ng-touched" ng-readonly="form.fields['ReportingParty.LoansGranted.Remuneration.FringeBenefits.ItemsProvided.Number'].source === 'calculation'" source-selection="ReportingParty.LoansGranted.Remuneration.FringeBenefits.ItemsProvided.Number" ng-disabled="!editable(form)">
-      .setValue('[ng-model="form.fields[\'ReportingParty.LoansGranted.Remuneration.FringeBenefits.ItemsProvided.Number\'].value"]', "3")
-      //<input id="input.ReportingParty.LoansGranted.Remuneration.FringeBenefits.BenefitGrossTaxable.Amount" type="text" /
-      //ng-model="form.fields['ReportingParty.LoansGranted.Remuneration.FringeBenefits.BenefitGrossTaxable.Amount'].value" ng-change="run()" class="form-control ng-pristine ng-valid ng-touched" ng-readonly="form.fields['ReportingParty.LoansGranted.Remuneration.FringeBenefits.BenefitGrossTaxable.Amount'].source === 'calculation'" source-selection="ReportingParty.LoansGranted.Remuneration.FringeBenefits.BenefitGrossTaxable.Amount" ng-disabled="!editable(form)">
-      .setValue('[ng-model="form.fields[\'ReportingParty.LoansGranted.Remuneration.FringeBenefits.BenefitGrossTaxable.Amount\'].value"]', carAmount)
-      //<input id="input.ReportingParty.LoansGranted.Remuneration.FringeBenefits.Reduction.Amount" type="text" 
-      //ng-model="form.fields['ReportingParty.LoansGranted.Remuneration.FringeBenefits.Reduction.Amount'].value" ng-change="run()" class="form-control ng-pristine ng-valid ng-touched" ng-readonly="form.fields['ReportingParty.LoansGranted.Remuneration.FringeBenefits.Reduction.Amount'].source === 'calculation'" source-selection="ReportingParty.LoansGranted.Remuneration.FringeBenefits.Reduction.Amount" ng-disabled="!editable(form)">
-      .setValue('[ng-model="form.fields[\'ReportingParty.LoansGranted.Remuneration.FringeBenefits.Reduction.Amount\'].value"]', carContri)
-      //<input id="input.ReportingParty.LoansGranted.Remuneration.FringeBenefits.BenefitNetTaxable.Amount" type="text" 
-      //ng-model="form.fields['ReportingParty.LoansGranted.Remuneration.FringeBenefits.BenefitNetTaxable.Amount'].value" ng-change="run()" class="form-control ng-pristine ng-valid ng-touched" ng-readonly="form.fields['ReportingParty.LoansGranted.Remuneration.FringeBenefits.BenefitNetTaxable.Amount'].source === 'calculation'" source-selection="ReportingParty.LoansGranted.Remuneration.FringeBenefits.BenefitNetTaxable.Amount" ng-disabled="!editable(form)" readonly="readonly">
-      .getValue('[ng-model="form.fields[\'ReportingParty.LoansGranted.Remuneration.FringeBenefits.BenefitNetTaxable.Amount\'].value"]', function(err, value){
-        assert(value == (carAmount - carContri));
-      })
-      .click('[ng-click="save(form)"]')
-      .pause(mywait)
-      .call(done);
-  });
 
-//✓ 21 Car Calculation (58254ms)
-  //  ✓ 22 LoansGranted Calculation (29167ms)
-  //  ✓ 23 Debtwaiver (19351ms)
 
-it('22 Car Calculation', function (done) {
+it('21 Car Calculation', function (done) {
   var carAmount = 1000;
   var carContri =100;
     client
@@ -571,7 +522,7 @@ it('22 Car Calculation', function (done) {
       .call(done)
     })
 
-it('23 LoansGranted Calculation', function (done) {
+it('22 LoansGranted Calculation', function (done) {
     var carAmount = 1000;
     var carContri =100;
     client
@@ -592,7 +543,7 @@ it('23 LoansGranted Calculation', function (done) {
       .call(done);
   });
 
-it('24 Debtwaiver', function (done) {
+it('23 Debtwaiver', function (done) {
     var carAmount = 1000;
     var carContri =100;
     client
@@ -610,6 +561,7 @@ it('24 Debtwaiver', function (done) {
       .pause(mywait)
       .call(done);
   });
+
 
 
   });
